@@ -63,4 +63,4 @@ def predict_img():
         "message" : "File is not allowed by its mime."
       })
 if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT"))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

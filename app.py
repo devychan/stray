@@ -11,6 +11,12 @@ model = YOLO("classifier.pt")
 
 # filepath = "Shih-Tzu.jpeg"
 
+@app.route("/")
+def index():
+  return jsonify({
+    "message": "api working"
+  })
+
 @app.route("/classify-breed", methods=["POST"])
 def predict_img():
   if request.method == "POST":

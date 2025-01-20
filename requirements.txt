@@ -3,3 +3,4 @@ gunicorn==23.0.0
 opencv-python==4.11.0.86
 supabase==2.11.0
 ultralytics==8.3.63
+python-dotenv==1.0.1
